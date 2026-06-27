@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 
 st.title("Dataset overview")
-df = pd.read_csv(r"C:\Users\user\default of credit card clients.csv",header=1)
+df = pd.read_csv("data/default of credit card clients.csv",header=1)
 st.dataframe(df)
 
 st.write(df.shape)
